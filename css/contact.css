@@ -1,0 +1,115 @@
+.form{
+  background-color: #bda795;
+  width: 60vw;
+  height: 70vh;
+  margin: 2vh auto 12vh;
+  padding: 3%;
+  display: flex;
+  text-align: left;
+  box-shadow: 15px 15px 0 #3f2c1e; /*背面の影 */
+}
+
+/* コーヒーカップ画像 */
+.form-left{
+  width: 30%;
+  margin-right: 5vw;
+  margin-top: 14vh;
+}
+
+.form-right{
+  width: 70%;
+}
+
+/* インプット3つ共通 */
+input{
+  width: 30vw;
+  border-bottom: 1px solid #1a1c1e;
+  margin: 1vh auto;
+}
+
+/* テキストエリア */
+textarea{
+  width: 30vw;
+  border-bottom: 1px solid #1a1c1e;
+  padding-top: 1vw;
+}
+
+.txt-area p{
+  margin-top: 2vh;
+}
+
+.sent-btn{
+  background-color: #423a34;
+  color: #fffefd;
+  text-align: center;
+  border-radius: 25px;
+  padding: 2%;
+  width: 10vw;
+  margin: 3vh 0vw 0vh 10vw;
+  cursor: pointer;
+}
+
+.sent-btn:hover{
+  background-color: #fffefdad;
+  color: #423a34;
+  transition: .5s;
+}
+
+/* オート入力した時の背景色調整 */
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #bda795 inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:599px){
+
+  .form{
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    margin: 5vh auto 30vh;
+    padding: 10%;
+    box-shadow: 10px 10px 0 #2e1806; /*背面の影 */
+  }
+  
+  /* コーヒーカップ画像 */
+  .form-left{
+    width: 40vw;
+    margin: 1vh auto;
+  }
+  
+  .form-right{
+    width: 75vw;
+    margin-right: 3vw;
+    font-size: .8rem;
+  }
+  
+  /* インプット3つ共通 */
+  input{
+    width: 70vw;
+  }
+  
+  /* テキストエリア */
+  textarea{
+    width: 70vw;
+  }
+  
+  .sent-btn{
+    width: 25vw;
+    margin-left: 23vw;
+    cursor: pointer;
+  }
+  
+  
+}

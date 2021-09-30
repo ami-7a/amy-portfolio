@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amy | Profile</title>
+  <link rel="stylesheet" href="../css/ress.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/common-en.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+  <meta name="description" content="">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Sawarabi+Mincho&family=WindSong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/931c5e739a.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- hamburger menu -->
+  <script>
+    $(function() {
+      $('.open_line').on("click", function(){
+  
+      $(this).toggleClass('open');
+      $('#nav').toggleClass('open');
+    });
+  });
+  
+  // on Click, remove clsss open
+  $(function() {
+    $('.nav-menu li a').on("click", function(){
+      $('#nav').removeClass('open');
+    });
+  });
+  </script>
+
+</head>
+<body>
+  <header class="header">
+
+    <!-- on the hamburger menu -->
+    <div id="hamburger">
+      <section>
+        <div class="open_line">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <!--nav in the hamburger menu-->
+      <nav id="nav">
+        <div class="nav-menu">
+
+          <div class="nav-img"><img src="../img/Amy-logo.png" alt=""></div>
+          
+          <ul>
+            <li><a href="index-en.html" target="_blank" rel="noopener noreferrer">
+              <span>TOP PAGE</span></a>
+            </li>
+  
+            <li><a href="about-en.html" target="_blank" rel="noopener noreferrer" >
+              <span>PROFILE</span></a>
+            </li>
+              
+  
+            <li><a href="works-en.html" target="_blank" rel="noopener noreferrer" >
+              <span>WORKS</span></a>
+            </li>
+  
+          </ul>
+
+          <!-- hamburger contact btn -->
+          <section class="contact-1">
+            <a href="contact-en.php" target="_blank" rel="noopener noreferrer">
+              <span>CONTACT</span>
+            </a>
+          </section>
+        </div>
+
+        <!--hamburger SNS section-->
+        <div class="sns-btn">
+          <a href="https://www.instagram.com/_.ami_____/" target="_blank" rel="noopener noreferrer" class="insta"><i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+  
+    </div>
+   
+  </header>
+
+  <main class="main">
+
+    <!-- introduction section -->
+    <section class="Profile">
+
+      <h1 class="section-title02">Profile</h1>
+      
+      <div class="about">
+        <img class="img01" src="../img/amy-stb.png" alt="img of me(Ami Kubo)">
+        <img class="img02" src="../img/The Met.png" alt="img of America">
+        <img class="img03" src="../img/coffee.png" alt="img of Coffee">
+
+        <div class="about-txt">
+          <div class="names">
+            <p>Amy</p>
+            <h2 class="name">Ami Kubo</h2>
+          </div>
+          <dl>
+            <dt>Birth</dt>
+            <dd>22nd Fukuoka,Japan</dd>
+
+            <dt>Final education</dt>
+            <dd>Graduated from Seinan Gakuin University, Fukuoka, Japan. Department of Foreign Languages, majoring in English (March, 2021)</dd>
+
+            <dt>career</dt>
+            <dd>This spring, I graduated from a university in Fukuoka. I had been offered a job at a travel agency, but due to the effects of the coronavirus, I declined the offer. I decided to become a web designer, which I have been interested in since I was a student, and I am still studying on my own.</dd>
+
+            <dt>Skills</dt>
+            <dd class="skills">HTML5/CSS3/JavaScript/jQery/PHP/Illustrator/Photoshop</dd>
+
+            <dt>Hobbies & Specialties</dt>
+            <dd>I am good at photography and retouching. My hobby is traveling abroad, and I can communicate in English. I can make a good cup of coffee. I have been a barista for 5 years.</dd>
+          </dl>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- contact btn --> 
+      <div class="link-btn contact-link-btn">
+        <a href="contact-en.php" target="_blank" rel="noopener noreferrer"><span>Contact form<i class="fas fa-paper-plane fa-xs"></i></span></a>
+      </div>
+
+  </main>
+
+  <footer class="footer">
+
+    <!-- common footer -->
+    
+    <section class="main-footer">
+      
+        <img class="footer-logo" src="../img/Amy-logo.png" alt="Amyロゴ">
+  
+        <ul>
+          <li><a href="about-en.html" target="_blank" rel="noopener noreferrer" >
+            <span>PROFILE</span></a>
+          </li>
+
+          <li><a href="works-en.html" target="_blank" rel="noopener noreferrer" >
+            <span>WORKS</span></a>
+          </li>
+
+          <li><a href="contact-en.php" target="_blank" rel="noopener noreferrer">
+            <span>CONTACT</span></a>
+          </li>
+        </ul>
+
+    </section>
+
+    <section class="copy-right">
+      <p>©︎ 2021, Ami Kubo, All Rights Reserved.</p>
+    </section>
+
+  </footer>
+  
+</body>
+</html>

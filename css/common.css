@@ -1,0 +1,604 @@
+@charset "UTF-8";
+
+/* ヘッダー、ハンバーガーメニュー、フッターの共通CSS */
+
+html{
+  width: 100vw;
+  height: auto;
+}
+
+body{
+  height: auto;
+  background-color: #fffaec;
+  /* background-color: #f8f8f8; */
+  color: #1a1c1e;
+  font-size: 0.9rem;
+  font-family: 'Lateef', 'Shippori Mincho B1', serif, sans-serif, cursive;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: .12vw;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #1a1c1e;
+  display: inline-block;
+}
+
+img{
+  max-width: 100%;
+}
+
+li{
+  list-style:none;
+}
+
+main{
+  height: auto;
+}
+
+.contents{
+  margin: 25vh auto;
+}
+
+.section-title{ /* h1共通 */
+  font-weight: normal;
+  font-size: 3rem;
+  margin-bottom: 5vh;
+}
+
+/* 他３ページのh1共通 */
+.section-title02{
+  font-weight: normal;
+  font-size: 3rem;
+  margin: 7vh auto;
+}
+
+/* linkボタン共通 */
+
+.link-btn a {
+  display: flex;
+  position: relative;
+  margin: 6vh auto;
+  padding: 1.5vh 1.5vw;
+  width: 11vw;
+  background-color: #f5f1e2;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  box-shadow: 5px 5px 10px #d6d3c6;
+}
+
+.link-btn a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: -1.1vw;
+  transform: translateY(calc(-50% - 1px)) rotate(30deg);
+  width: .8vw;
+  height: 1px;
+  background-color: #bd9869;
+  transition: 0.3s;
+}
+
+.link-btn a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1vw;
+  transform: translateY(-50%);
+  width: 3vw;
+  height: 1px;
+  background-color: #bd9869;
+  transition: 0.3s;
+}
+
+.link-btn a:hover {
+  text-decoration: none;
+  background-color: #dfdbcc;
+  box-shadow: 5px 5px 10px #918e85;
+}
+
+.link-btn a:hover::before,
+.link-btn a:hover::after {
+  right: -2vw;
+}
+
+/* contactボタン共通 */
+.contact-link-btn a{
+  width: 30vw;
+  padding: 5vh 0vw;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.contact-link-btn a::before,
+.contact-link-btn a::after{
+  display: none;
+}
+
+.fa-paper-plane{
+  padding-left: 1vw;
+}
+
+
+/* ハンバーガーメニュー */
+#hamburger {
+  position: fixed;
+  right : 4vw;
+  top: 2vh;
+   z-index: 100;/*ハンバーガーを一番上に表示 */
+}
+
+.open_line {
+  position: relative;
+  cursor: pointer;
+  z-index: 50;
+  height: 8vh; /*クリック範囲 */
+  width: 6vw;
+}
+
+.open_line span {
+  position: absolute;
+  height: 1px;
+  background: #1a1c1e;
+}
+
+.open_line, .open_line span {
+  display: inline-block;
+  transition: all .5s;
+}
+
+/* ライン幅調整 */
+.open_line span:nth-of-type(1) {
+  top: 2vh;
+  width: 4vw;
+}
+.open_line span:nth-of-type(2) {
+  top: 3.8vh;
+  width: 3vw;
+}
+.open_line span:nth-of-type(3) {
+  top: 5.6vh;
+  width: 2vw;
+}
+
+.open_line.open span:nth-of-type(1) {
+  width: 1.4vw;
+  transform: translate3d(2px, 5px, 0) rotate(45deg);
+}
+.open_line.open span:nth-of-type(2) {
+  transform: translate3d(0px, 0, 0) rotate(-45deg);
+}
+.open_line.open span:nth-of-type(3) {
+  width: 1.3vw;
+  transform: translate3d(20px, -5px, 0) rotate(45deg);
+}
+
+/*クリック・オープン時のナビゲーション*/
+#nav{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffaec;
+  /* background-color: #f8f8f8; */
+  font-size: 1.3rem;
+  transition: all 0.6s;
+}
+
+.nav-img img{
+  width: 20vw;
+  height: 20vh;
+  object-fit: contain;
+  margin: 15vh auto 3vh;
+}
+
+#nav.open{
+  right: 0px;
+}
+
+#nav .nav-menu ul li{
+  margin-bottom: 6vh ;
+}
+
+/* ハンバーガー内コンタクトボタン */
+
+.contact-1 a {
+  display: flex;
+  position: relative;
+  margin: 8vh auto;
+  padding: 2vh 2vw;
+  width: 16vw;
+  background-color: #f5f1e2;
+  transition: 0.3s;
+  box-shadow: 5px 5px 10px #d6d3c6;
+}
+
+.contact-1 a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: -1.7vw;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 1.2vw;
+  height: 1px;
+  background-color: #c6529a;
+  transition: 0.3s;
+}
+
+.contact-1 a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1.5vw;
+  transform: translateY(-50%);
+  width: 4vw;
+  height: 1px;
+  background-color: #c6529a;
+  transition: 0.3s;
+}
+
+.contact-1 a:hover {
+  text-decoration: none;
+  background-color: #dfdbcc;
+  box-shadow: 5px 5px 10px #918e85;
+}
+
+.contact-1 a:hover::before,
+.contact-1 a:hover::after {
+  right: -2.5vw;
+}
+
+
+/* ハンバーガー内インスタボタン */
+.insta{
+  border-radius:50%;
+  position:relative;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  font-size:30px;
+  text-decoration:none;
+  transition:.5s;
+
+  border:solid 1px #c6529a;
+  color:#c6529a;
+  font-size:35px;
+}
+
+  /* アイコンを真ん中に */
+.insta i{
+  position:absolute;
+  top:50%;
+  left:52%;
+  -ms-transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+/* Instagramマウスホバー時 */
+.insta:hover{
+  border:solid 1px #925f7fe3;
+  background:#c6529a;
+  color:#fff!important;
+}
+
+
+/* 共通フッター */
+/* ページトップに戻るボタン */
+.page_top{
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background-color: #2d3133;
+  right: -92%;
+  bottom: 0%;
+  border-radius: 50%;
+  margin-top: 13vh;
+  margin-bottom: -23vh;
+}
+
+.page_top a{
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.page_top a::before{
+  font-family: 'Font Awesome 5 Free'; 
+  font-weight: 900;
+  content: '\f102';
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  width: 20px;
+  height: 2vh;
+  top: -30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.page_top a::after{
+  content: 'PAGE TOP';
+  color: #fff;
+  position: absolute;
+  top: 35px;
+  bottom: 0;
+  right: 0;
+  left: 2px;
+  margin: auto;
+  text-align: center;
+}
+
+/* フッター */
+.main-footer{
+  height: 16vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebdfcf;
+  padding: 1vh 5vw;
+  width: 100vw;
+}
+
+.main-footer img{
+  width: 15vw;
+  height: 15vh;
+  object-fit: contain;
+}
+
+.main-footer ul{
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.main-footer ul li{
+  margin-left: 5vw;
+  line-height: 16vh;
+}
+
+.copy-right{
+  height: auto;
+  padding: 1.3vh ;
+  background-color: #2d3133;
+  color: #eaedec;
+  width: 100vw;
+}
+
+.copy-right p{
+  font-size: .8rem;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:599px){
+  
+  body{
+    font-size: .9rem;
+    letter-spacing: .25rem;
+  }
+  
+  .contents{
+    margin: 20vh auto;
+  }
+
+  .section-title{ /* h1共通 */
+    font-size: 2.2rem;
+  }
+
+  /* 他３ページのh1共通 */
+  .section-title02{
+    font-size: 2.2rem;
+    margin: 7vh auto;
+  }
+
+  /* Linkボタン共通 */
+  
+  .link-btn a {
+    margin: 1vh auto;
+    padding: 1.5vh 0vw 1.5vh 4vw;
+    width: 40vw;
+  }
+  
+  .link-btn a::before {
+    right: -2vw;
+    width: 3vw;
+  }
+  
+  .link-btn a::after {
+    right: -1.7vw;
+    width: 8vw;
+  }
+  
+  .link-btn a:hover::before,
+  .link-btn a:hover::after {
+    right: -5vw;
+  }
+
+
+  /* コンタクトボタン共通 */
+  .contact-link-btn a{
+    width: 70vw;
+    margin-top: 5vh;
+    padding: 3vh 0vw;
+  }
+
+  
+  .fa-paper-plane{
+    padding-left: 3vw;
+  }
+
+  
+    /* ハンバーガーメニュー */
+  #hamburger {
+    right : 12vw;
+    top: 3vh;
+  }
+
+  /* ライン幅調整 */
+  .open_line span:nth-of-type(1) {
+    width: 10vw;
+  }
+  .open_line span:nth-of-type(2) {
+    width: 8vw;
+  }
+  .open_line span:nth-of-type(3) {
+    width: 6vw;
+  }
+
+  .open_line.open span:nth-of-type(1) {
+    width: 4vw;
+    transform: translate3d(1.3px, 6px, 0) rotate(45deg);
+  }
+
+  .open_line.open span:nth-of-type(3) {
+    width: 4vw;
+    transform: translate3d(15px, -8.7px, 0) rotate(45deg);
+  }
+
+  /*クリック・オープン時のナビゲーション*/
+  #nav{ 
+    font-size: 1.2rem;
+    height: 100vh;
+  }
+
+  .nav-img img{
+    width: 65vw;
+    height: 15vh;
+    margin: 10vh auto 5vh;
+  }
+
+  #nav .nav-menu ul li{
+    margin-bottom: 6vh ;
+  }
+
+  /* ハンバーガー内コンタクトボタン */
+
+  .contact-1 a {
+    padding: 2vh 6vw;
+    width: 55vw;
+  }
+
+  .contact-1 a::before {
+    right: -5vw;
+    width: 3.5vw;
+  }
+
+  .contact-1 a::after {
+    right: -5vw;
+    width: 12vw;
+  }
+
+  .contact-1 a:hover::before,
+  .contact-1 a:hover::after {
+    right: -7vw;
+  }
+
+  .insta i{
+    left:55%;
+  }
+
+
+  /* 共通フッター */
+  /* ページトップに戻るボタン */
+.page_top{
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  margin-bottom: 1vh;
+}
+
+.page_top a{
+  width: 50px;
+  height: 50px;
+}
+
+.page_top a::before{
+  font-size: .9rem;
+  top: -20px;
+  left: 3.5vw;
+}
+
+.page_top a::after{
+  content: 'PAGE TOP';
+  top: 30px;
+  left: 3vw;
+  line-height: 1.5vh;
+  font-size: .8rem;
+}
+
+
+  /* フッター */
+  .main-footer{
+    height: 10vh;
+    padding: 1vh 3vw 2vh 1vw;
+    margin-top: -18vh;
+  }
+
+  .main-footer img{
+    width: 30vw;
+    height: 10vh;
+  }
+
+  .main-footer ul{
+    flex-direction: column;
+    margin-left: 0vw;
+    font-size: .9rem;
+  }
+
+  .main-footer ul li{
+    margin-left: 0vw;
+    line-height: 3vh;
+  }
+
+  .copy-right{
+    padding: 1vh 0vw;
+  }
+
+  .copy-right p{
+    font-size: .9rem;
+    letter-spacing: .15vw;
+  }    
+
+
+}

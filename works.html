@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amy | Works 作品例</title>
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/works.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <meta name="description" content="">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Sawarabi+Mincho&family=WindSong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/931c5e739a.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- ハンバーガーメニュー -->
+  <script>
+    $(function() {
+      $('.open_line').on("click", function(){
+  
+      $(this).toggleClass('open');
+      $('#nav').toggleClass('open');
+    });
+  });
+  
+  // メニューをクリックされたら非表示
+  $(function() {
+    $('.nav-menu li a').on("click", function(){
+      $('#nav').removeClass('open');
+    });
+  });
+  </script>
+
+</head>
+<body>
+  <header class="header">
+
+    <!-- ハンバーガーメニュー中身 -->
+    <div id="hamburger">
+      <section>
+        <div class="open_line">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <!--ハンバーガー内のグロナビ-->
+      <nav id="nav">
+        <div class="nav-menu">
+
+          <div class="nav-img"><img src="img/Amy-logo.png" alt=""></div>
+          
+          <ul>
+            <li><a href="index.html" target="_blank" rel="noopener noreferrer">
+              <span>TOP PAGE</span></a>
+            </li>
+  
+            <li><a href="about.html" target="_blank" rel="noopener noreferrer" >
+              <span>FROFILE</span></a>
+            </li>
+              
+  
+            <li><a href="works.html" target="_blank" rel="noopener noreferrer" >
+              <span>WORKS</span></a>
+            </li>
+  
+          </ul>
+
+          <!-- ハンバーガーお問い合わせボタン -->
+          <section class="contact-1">
+            <a href="contact.php" target="_blank" rel="noopener noreferrer">
+              <span>CONTACT</span>
+            </a>
+          </section>
+        </div>
+
+        <!--ハンバーガー内SNSセクション-->
+        <div class="sns-btn">
+          <a href="https://www.instagram.com/_.ami_____/" target="_blank" rel="noopener noreferrer" class="insta"><i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+  
+    </div>
+   
+  </header>
+
+  <main class="main">
+
+    <h1 class="section-title02">Works</h1>
+
+    <section class="work-01">
+
+      <div class="scrolldown01"><span>Scroll</span></div>
+
+      <li>
+        <div class="scroll-img">
+          <a href="https://colorful-fukuoka.jp/" target="_blank" rel="noopener noreferrer"><img src="img/colorful-longshot.png" alt="作品１"></a>
+        </div>
+        <p class="add-txt add1">※スクロールしてご覧ください</p>
+      </li>
+
+      <li class="work-txt">
+        <h2>結婚相談所<br>コーポレートサイト</h2>
+        <p>クライアント：カラフル福岡結婚相談所</p>
+        <p>担当部分：企画/デザイン/コーディング/写真</p>
+        <p>制作時間：１ヶ月</p>
+        <p>メインターゲット：２０〜３０歳女性</p>
+        <p>コンセプト：柔らかな色使いと、細かな会社説明をいれ、安心してご利用いただける結婚相談所という雰囲気にしています。</p>
+
+        <div class="link-btn works-link-btn">
+          <a href="https://colorful-fukuoka.jp/" target="_blank" rel="noopener noreferrer"><span>このサイトへ</span></a>
+        </div>
+          
+      </li>
+
+    </section>
+
+    <section class="work-01 column-reverse">
+
+      <li class="work-txt">
+        <h2>不動産会社<br>コーポレートサイト</h2>
+        <p>クライアント：オークニエステート</p>
+        <p>担当部分：企画/デザイン/コーディング/写真</p>
+        <p>制作時間：１ヶ月</p>
+        <p>ターゲット：お家探し、ご購入をご検討の方</p>
+        <p>コンセプト:スタイリッシュな雰囲気の中に、グリッドレイアウトを用いて遊びのある、目を引くようなページにしています。</p>
+
+        <!-- <div class="link-btn works-link-btn">
+          <a href="" target="_blank" rel="noopener noreferrer"><span>このサイトへ</span></a>
+        </div> -->
+          
+      </li>
+
+      <li>
+        <div class="scroll-img">
+          <!-- <a href="" target="_blank" rel="noopener noreferrer">--><img src="img/oakni-longshot.png" alt="作品２" >
+          <!-- </a>  サイト公開したらaタグつける -->
+        </div>
+        <p class="add-txt">※HP公開:10月初め予定</p>
+        <div class="scrolldown01 scrolldown02"><span>Scroll</span></div>
+      </li>
+    </section>
+
+    <!-- お問い合わせボタン  -->
+      <div class="link-btn contact-link-btn">
+        <a href="contact.php" target="_blank" rel="noopener noreferrer"><span>Contact form<i class="fas fa-paper-plane fa-xs"></i></span></a>
+      </div>
+
+  </main>
+
+  <footer class="footer">
+
+    <!-- 共通フッター -->
+    
+    <section class="main-footer">
+      
+        <img class="footer-logo" src="img/Amy-logo.png" alt="Amyロゴ">
+  
+        <ul>
+          <li><a href="about.html" target="_blank" rel="noopener noreferrer" >
+            <span>PROFILE</span></a>
+          </li>
+
+          <li><a href="works.html" target="_blank" rel="noopener noreferrer" >
+            <span>WORKS</span></a>
+          </li>
+
+          <li><a href="contact.php" target="_blank" rel="noopener noreferrer">
+            <span>CONTACT</span></a>
+          </li>
+        </ul>
+
+    </section>
+
+    <section class="copy-right">
+      <p>©︎ 2021, Ami Kubo, All Rights Reserved.</p>
+    </section>
+
+  </footer>
+  
+</body>
+</html>

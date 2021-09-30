@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amy | Portfolio</title>
+  <link rel="stylesheet" href="../css/ress.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/common-en.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+  <meta name="description" content="">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Sawarabi+Mincho&family=WindSong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/931c5e739a.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- hamburger menu -->
+  <script>
+    $(function() {
+      $('.open_line').on("click", function(){
+  
+      $(this).toggleClass('open');
+      $('#nav').toggleClass('open');
+    });
+  });
+  
+  // on Click, remove clsss open
+  $(function() {
+    $('.nav-menu li a').on("click", function(){
+      $('#nav').removeClass('open');
+    });
+  });
+  </script>
+
+  <!-- smooth scroll -->
+  <script>
+    $(function(){
+      $('a[href^="#"]').click(function(){
+        let speed = 500;
+        let href= $(this).attr("href");
+        let target = $(href == "#" || href == "" ? 'html' : href);
+        let position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+  </script>
+
+  <!-- loading fade in-->
+  <script>
+    $(window).on('load',function(){
+      $("#top-fadeUp").delay(1500).fadeOut('slow');//Wait 1.5 seconds for loading screen, then fade out
+      $("#top-fadeUp_logo").delay(1200).fadeOut('slow');//Wait for the logo for 1.2 seconds and then fade out
+    });
+  </script>
+
+
+</head>
+<body>
+  <header class="header">
+
+    <!-- bottom to top fadeUp -->
+    <div id="top-fadeUp">
+      <div id="top-fadeUp_logo"><img src="../img/Amy-logo-2.png" alt=""></div>
+    </div>
+
+    <!-- Language switching button -->
+    <div class="language-btn">
+      <p class="en">English</p>
+      <a href="../index.html"><p class="jp">日本語</p></a>
+    </div>
+
+    <section class="main-visual">
+      <div class="top-name"><img src="../img/Amy-logo.png" alt=""></div>
+      <p>front-end engineer</p>
+    </section>
+
+    <!-- scroll down -->
+    <div class="scrolldown">
+      <span>Scroll</span>
+    </div>
+
+    <!-- on the hamburger menu -->
+    <div id="hamburger">
+      <section>
+        <div class="open_line">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <!-- nav in the hamburger menu-->
+      <nav id="nav">
+        <div class="nav-menu">
+
+          <div class="nav-img"><img src="../img/Amy-logo.png" alt=""></div>
+          
+          <ul>
+            <li><a href="index-en.html">
+              <span>TOP PAGE</span></a>
+            </li>
+  
+            <li><a href="about-en.html" target="_blank" rel="noopener noreferrer" >
+              <span>PROFILE</span></a>
+            </li>
+              
+  
+            <li><a href="works-en.html" target="_blank" rel="noopener noreferrer" >
+              <span>WORKS</span></a>
+            </li>
+  
+          </ul>
+
+          <!-- hamburger contact btn -->
+          <section class="contact-1">
+            <a href="contact-en.php" target="_blank" rel="noopener noreferrer">
+              <span>CONTACT</span>
+            </a>
+          </section>
+        </div>
+
+        <!--hamburger SNS section-->
+        <div class="sns-btn">
+          <a href="https://www.instagram.com/_.ami_____/" target="_blank" rel="noopener noreferrer" class="insta"><i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+  
+    </div>
+   
+  </header>
+
+  <main class="main">
+
+    <!-- introduction section -->
+    <section class="about contents">
+      
+      <div class="about-me">
+        <li class="about-photo">
+          <img src="../img/amy-Sweden.png" alt="Amy-mainimg">
+        </li>
+
+        <li class="about-txt">
+          <div class="names">
+            <h2 class="name">Amy.K</h2>
+            <p class="frontend-engineer">- front-end engineer -</p>
+          </div>
+
+          <p class="concept">Love yourself, Love others.</p>
+          <p class="main-txt">I will be a designer who can be close to people's hearts and treat them to with big love.</p>
+          <p class="main-txt">And I will create a world full of love.</p>
+        </li>
+      </div>
+
+
+      <div class="link-btn about-link-btn">
+        <a href="about-en.html" target="_blank" rel="noopener noreferrer"><span>MORE</span></a>
+      </div>
+
+    </section>
+
+
+    <!-- skill section -->
+    <section class="skill contents">
+
+      <h1 class="section-title">Skills</h1>
+
+      <div class="skills">
+        <li>
+          <img src="../img/html-logo.png" alt=""><img src="../img/CSS-logo.png" alt="">
+          <div class="skills-txt">
+            <h3>HTML5/CSS3</h3>
+            <p>Able to write basic cording and responsive design.<br>(Editor:Visual Studio Code)</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="../img/JavaScript-logo.png" alt="">
+          <div class="skills-txt">
+            <h3>JavaScript</h3>
+            <p>I can use jQuery to add simple movements to my site.</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="../img/PHP-logo.png" alt="">
+          <div class="skills-txt">
+            <h3>PHP</h3>
+            <p>Basic PHP coding is available for exchanging information.</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="../img/Illustrator-logo.png" alt="">
+          <div class="skills-txt">
+            <h3>Illustrator</h3>
+            <p>I can do all the basic operations. I have experience in creating logos and business cards, and I'm still learning it.</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="../img/Photoshop-logo.png" alt="">
+          <div class="skills-txt">
+            <h3>Photoshop</h3>
+            <p>I have acquired knowledge of photo processing, compositing, and other aspects of design from scratch. I often take pictures, so this is the software I use the most.</p>
+          </div>
+        </li>
+
+        <li>
+          <img src="../img/Camera-logo.png" alt="">
+          <div class="skills-txt">
+            <h3>Camera</h3>
+            <p>I have traveled abroad with my camera and have taken thousands of pictures. I am good at landscape and portrait photography.</p>
+          </div>
+        </li>
+      </div>
+    </section>
+
+
+    <!-- work section -->
+    <section class="works contents">
+      <h1 class="section-title">Works</h1>
+
+      <div class="work">
+        <li class="slide-up">
+          <a href="https://colorful-fukuoka.jp/" target="_blank" rel="noopener noreferrer">
+            <span class="mask">
+              <img src="../img/colorful-website.png" alt="">
+              <span class="mask-txt">
+                <p class="pop">01</p>
+                <p class="span">Marriage agency corporate site</p>
+                <p>This is my first project I received from customer.<br>I was in charge of everything from planning, design, and coding.</p>
+              </span>
+            </span>
+          </a>
+        </li>
+
+        <!-- オークニのURL追加する！！！ -->
+        <li class="slide-up">
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <span class="mask">
+              <img src="../img/oakni-website.png" alt="">
+              <span class="mask-txt">
+                <p class="pop">02</p>
+                <p class="span">Real Estate Corporate Site</p>
+                <p>I was given the job of renewing the website and I created it.<br>
+                  I was in charge of everything from planning, design, and coding.</p>
+              </span>
+            </span>
+          </a>
+        </li>
+      </div>
+
+      <div class="link-btn">
+        <a href="works-en.html" target="_blank" rel="noopener noreferrer"><span>MORE</span></a>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact contents">
+      <h1 class="section-title">Contact</h1>
+
+      <p>Thank you for visiting my portfolio web site.<br>If you have any questions, please use the contact form at the link below.
+      </p>
+
+      <div class="link-btn contact-link-btn">
+        <a href="contact-en.php" target="_blank" rel="noopener noreferrer"><span>Contact form<i class="fas fa-paper-plane fa-xs"></i></span></a>
+      </div>
+      
+      <div class="page_top"><a href="#"></a></div>
+      
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <!-- common footer -->
+    
+    <section class="main-footer">
+      
+        <img class="footer-logo" src="../img/Amy-logo.png" alt="Amyロゴ">
+  
+        <ul>
+          <li><a href="about-en.html" target="_blank" rel="noopener noreferrer" >
+            <span>PROFILE</span></a>
+          </li>
+
+          <li><a href="works-en.html" target="_blank" rel="noopener noreferrer" >
+            <span>WORKS</span></a>
+          </li>
+
+          <li><a href="contact-en.php" target="_blank" rel="noopener noreferrer">
+            <span>CONTACT</span></a>
+          </li>
+        </ul>
+
+    </section>
+
+    <!-- copy right -->
+    <section class="copy-right">
+      <p>©︎ 2021, Ami Kubo, All Rights Reserved.</p>
+    </section>
+
+  </footer>
+  
+</body>
+</html>

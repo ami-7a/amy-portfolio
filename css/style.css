@@ -1,0 +1,610 @@
+
+/* 開いた時の画面表示 フェードアップ*/
+#top-fadeUp {
+  /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background:#242424;
+  }
+  
+  /* 画像中央配置*/
+  #top-fadeUp_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* logoの大きさ*/
+  #top-fadeUp_logo img {
+    width:25vw;
+    height: auto;
+    object-fit: contain;
+
+    /* フェードアップアニメーション */
+    animation-name: fadeUpAnimetion;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeUpAnimetion{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
+
+header{
+  height: 100vh;
+}
+
+/* 言語切り替えボタン */
+.language-btn{
+  float: right;
+  display: flex;
+  margin-top: 10vh;
+  margin-right: 1vw;
+  padding: 1%;
+}
+
+.language-btn .jp{
+  margin-right: 1vw;
+  padding-top: .2vh;
+}
+
+.language-btn .en{
+  font-size: 1.2rem;
+}
+
+
+/*背景の設定*/
+
+.language-btn a{
+  /*背景色の基点*/
+  position: relative;
+}
+
+.language-btn a::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: -.5vw;
+  width: 0;
+  height:100%;
+  background: #bd9869;
+    /*アニメーションの指定*/
+  transition:all .5s;
+  opacity: 0;/*はじめは透過0*/
+}
+
+/*hoverの設定*/
+.language-btn a:hover::after {
+  /*背景の形状*/
+  width: 120%;/*横幅を伸ばす*/
+  opacity: 1;/*不透明に*/
+}
+
+.language-btn a:hover{
+  color: #fff;
+}
+
+
+
+
+
+/* メインビジュアル */
+.main-visual{
+  height: auto;
+  width: 100vw;
+  position: absolute;
+  top: 33%;
+  left: 0%;
+}
+
+.top-name img{
+  width: 30vw;
+  height: 30vh;
+  object-fit: contain;
+}
+
+/* メインビジュアルのp */
+.main-visual p{
+  margin-top: -5vh;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+}
+
+/*スクロールダウン全体の場所*/
+.scrolldown{
+  position:absolute;
+  bottom:0%;
+  right:50%;
+  /* 矢印の動き animation指定 */
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化 全体が下→上→下に動く*/
+@keyframes arrowmove{
+  0%{bottom:1%;}
+  50%{bottom:3%;}
+  100%{bottom:1%;}
+}
+
+/*Scrollテキストの描写*/
+.scrolldown span{
+  /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:10px;
+  /*テキストの形状*/
+  color: #1a1c1ecc;
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown::before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  /*矢印の形状*/
+  width: .5px;
+  height: 13px;
+  background: #1a1c1ecc;
+  transform: skewX(-31deg);
+}
+
+.scrolldown::after{
+  content:"";
+  /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+  /*矢印の形状*/
+  width: 0.3px;
+  height: 50px;
+  background:#1a1c1ecc;
+}
+
+/* メイン */
+
+/* 自己紹介セクション */
+.about-me{
+  display: flex;
+  width: 80%;
+  margin: 0vh auto;
+}
+
+.about-me li{
+  width: 50%;
+}
+
+/* Amy メイン写真上下括弧 */
+.about-photo{
+  position: relative;
+}
+
+.about-photo::before,
+.about-photo::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.about-photo::before{
+  top: -12px;
+  right: -12px;
+  border-width: 0 80px 80px 0;
+  border-color: transparent #bd9869 transparent transparent;
+}
+
+.about-photo::after{
+  bottom: -3px;
+  left: -12px;
+  border-width: 80px 0 0 80px ;
+  border-color: transparent transparent transparent #bd9869;
+}
+
+/* 右側のテキスト */
+.about-txt{
+  padding: 5vh 1vw 5vh 5vw; 
+}
+
+.names{
+  margin: 5vh auto 7vh;
+}
+
+.names p{
+  font-size: 1.2rem;
+}
+
+ h2{ /*久保愛実 */
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+ .concept{ /*Love yourself, Love others */
+  font-size: 2rem;
+  font-family: 'WindSong', cursive;
+  color: #bd9869;
+}
+
+.main-txt{
+  width: 75%;
+  margin: 5vh auto;
+}
+
+/* aboutセクションのlinkボタン */
+.about-link-btn{
+  margin: -12vh 0vw 0vh 70vw;
+}
+
+
+/* スキルセクション */
+.skills{
+  margin: 5vh auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li{
+  width: 30%;
+  margin: 2vh auto ;
+  background-color: #fdf8eb;
+  box-shadow: 1px 1px 8px #b3b3b3;
+  padding: 3vh 2vw;
+}
+
+.skills img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+h3{ /* 共通h3 */
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 1vh auto 2vh;
+}
+
+.skills-txt p{
+  font-size: .8rem;
+  color: #554c40;
+}
+
+.skills li:hover{
+  box-shadow: 3px 9px 5px #afafaf;
+  transition: .5s;
+}
+
+/* ワークセクション */
+.work{
+  width: 60%;
+  margin: 5vh auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work li{
+  width: 50%;
+}
+
+.mask img{
+  height: 60vh;
+  object-fit: contain;
+}
+
+/* 背景が下から出現＋テキスト */
+.slide-up{
+  position:relative;/*テキストの基点*/
+}
+
+.slide-up .mask{
+  position:relative;/*背景色の基点*/
+  display: block;
+  line-height: 0;
+  overflow: hidden;/*はみ出る要素を隠す*/
+}
+
+.slide-up .mask::before{
+  content:"";
+  position: absolute;
+  z-index: 2;
+  left:0;
+  bottom:0;
+  opacity:0;/*透過*/
+  transition: .5s ease-in-out;/*移り変わる速さ*/
+  transform: translateY(100%);
+  background:#fffaec;/*背景色*/
+  width:100%;
+  height: 54%; 
+}
+
+.slide-up:hover .mask::before{/*hoverした時の変化*/
+  opacity:1;/*透過なしに変化*/
+  transform: translateY(0);
+}
+
+.slide-up .mask-txt{/*画像の上のテキスト*/
+  position: absolute;
+  font-size: .7rem;
+  box-shadow: 0 0 5px #8d7e6aa1;
+  padding: 5%;
+  opacity:0;/*透過0*/
+  transition: .5s ease-in-out;/*移り変わる速さ*/
+  z-index:3;/*テキストを前面に*/
+  width: 100%;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%,-50%);/*テキストの位置中央指定*/
+  color: #1a1c1e;/*テキストの色*/
+  line-height: 2;/*行の高さ*/
+}
+
+.slide-up:hover .mask-txt{/*hoverした時の変化*/
+  opacity:1;/*透過なしに変化*/
+}
+
+.mask-txt .pop{
+  background-color: #b69366a8;
+  border-radius: 50%;
+  width: 2vw;
+  display: inline-block;
+  color: #fff;
+  padding-left: .1vw;
+}
+
+.mask-txt .span{
+  margin: 2vh auto;
+  font-size: .8rem;
+}
+
+/* コンタクトセクション */
+
+.contact p{
+  line-height: 4vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:599px){
+
+  /* 開いた時の画面表示 フェードアップ*/
+
+  /* 画像中央配置*/
+  #top-fadeUp_logo {
+    top: 45%;
+  }
+  
+  /* logoの大きさ*/
+  #top-fadeUp_logo img {
+    width:60vw;
+  }
+
+
+  /* メインビジュアル */
+  .main-visual{
+    width: 100vw;
+    top: 25%;
+  }
+  
+  .top-name img{
+    width: 80vw;
+  }
+  
+  /* メインビジュアルのp */
+  .main-visual p{
+    margin-top: -8vh;
+    font-size: 1.2rem;
+  }
+  
+  /*Scrollテキストの描写*/
+  .scrolldown span{
+    font-size: 0.9rem;
+    bottom:11vh;
+  }
+  
+  /* 矢印の描写 */
+  .scrolldown::before {
+    bottom: 10vh;
+  }
+  
+  .scrolldown::after{
+    bottom:10vh;
+  }
+  
+  /* メイン */
+  
+  /* 自己紹介セクション */
+  .about-me{
+    flex-direction: column;
+    width: 90%;
+    margin: -10vh auto 0vh;
+  }
+  
+  .about-me li{
+    width: 95%;
+    margin: auto;
+  }
+  
+  /* Amy メイン写真上下括弧 */
+  .about-photo::before{
+    top: -7px;
+    right: -7px;
+    border-width: 0 60px 60px 0;
+  }
+  
+  .about-photo::after{
+    bottom: -2px;
+    left: -7px;
+    border-width: 60px 0 0 60px ;
+  }
+  
+  /* 自己紹介のテキスト */
+  .about-txt{
+    padding: 5vh 0vw; 
+  }
+  
+  .names{
+    margin: 2vh auto 4vh;
+  }
+
+  .frontend-engineer{
+    display: none;
+  }
+  
+  .names p{
+    font-size: 1rem;
+  }
+  
+   h2{ /*久保愛実 */
+    font-size: 1.2rem;
+  }
+  
+   .concept{ /*Love yourself, Love others */
+    font-size: 1.2rem;
+  }
+  
+  .main-txt{
+    width: 85vw;
+    margin: 3vh auto;
+    font-size: .9rem;
+  }
+  
+  
+  /* スキルセクション */
+  .skills{
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .skills li{
+    width: 90vw;
+    margin: 1vh auto;
+  }
+  
+  h3{ /* 共通h3 */
+    font-size: 1.3rem;
+    margin: 1vh auto;
+  }
+  
+  .skills-txt p{
+    padding: 2%;
+  }
+  
+  /* ワークセクション */
+  .work{
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .work li{
+    width: 80vw;
+    margin: 2vh auto;
+  }
+  
+  .mask img{
+    height:auto;
+  }
+  
+  /* 背景が下から出現＋テキスト */
+  
+  .slide-up .mask::before{
+    opacity:1;/*透過なし*/
+    transform: translateY(0%); 
+  }
+  
+  .slide-up:hover .mask::before{/*hoverした時の変化*/
+    opacity:1;/*透過なし*/
+    transform: translateY(0);
+  }
+  
+  .slide-up .mask-txt{/*画像の上のテキスト*/
+    padding: 2%;
+    opacity:1;/*透過なし*/
+    width: 80vw;
+  }
+  
+  .slide-up:hover .mask-txt{/*hoverした時の変化*/
+    opacity:1;/*透過なしに変化*/
+  }
+  
+  .mask-txt .pop{
+    width: 6vw;
+    padding-left: 1vw;
+  }
+  
+  .contact p{
+    line-height: 3vh;
+    font-size: .9rem;
+    width: 93vw;
+    margin: auto;
+  }
+  
+  
+  /* aboutセクションのMOREボタン */
+  .about-link-btn{
+    margin: auto;
+  }
+
+  /* コンタクトセクション */
+  .contact p{
+    padding: 0vh 5vw 0vh 5vw;
+  }
+  
+  
+}
