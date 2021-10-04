@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://ami-k-design.com/</loc>
+  <priority>1.0</priority>
+  <lastmod>2021-10-04T11:33:47+09:00</lastmod>
+</url>
+<url>
+  <loc>https://ami-k-design.com/en-html/index-en.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2021-10-04T11:17:32+09:00</lastmod>
+</url>
+<url>
+  <loc>https://ami-k-design.com/index.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2021-10-04T11:33:47+09:00</lastmod>
+</url>
+<url>
+  <loc>https://ami-k-design.com/about.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2021-09-30T14:40:53+09:00</lastmod>
+</url>
+<url>
+  <loc>https://ami-k-design.com/works.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2021-10-04T11:17:31+09:00</lastmod>
+</url>
+<url>
+  <loc>https://ami-k-design.com/contact.php</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://ami-k-design.com/en-html/about-en.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2021-10-04T11:33:56+09:00</lastmod>
+</url>
+<url>
+  <loc>https://ami-k-design.com/en-html/works-en.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2021-10-04T11:17:33+09:00</lastmod>
+</url>
+<url>
+  <loc>https://ami-k-design.com/en-html/contact-en.php</loc>
+  <priority>0.7</priority>
+</url>
+
+</urlset>
