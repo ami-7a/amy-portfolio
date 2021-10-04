@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amy | Contact お問い合わせ</title>
+  <title>Amy | Contact </title>
   <link rel="stylesheet" href="../css/ress.css">
   <link rel="stylesheet" href="../css/contact.css">
   <link rel="stylesheet" href="../css/common-en.css">
@@ -94,15 +94,15 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Sawarabi+Mincho&family=WindSong&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/931c5e739a.js" crossorigin="anonymous"></script>
 
-  <!-- jQuery読み込み -->
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <!-- ハンバーガーメニュー -->
+  <!-- hamburger menu -->
   <script>
     $(function() {
       $('.open_line').on("click", function(){
@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     });
   });
   
-  // メニューをクリックされたら非表示
+  // on Click, remove clsss open
   $(function() {
     $('.nav-menu li a').on("click", function(){
       $('#nav').removeClass('open');
@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 <body>
   <header class="header">
 
-    <!-- ハンバーガーメニュー中身 -->
+    <!-- on the hamburger menu -->
     <div id="hamburger">
       <section>
         <div class="open_line">
@@ -136,7 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         </div>
       </section>
 
-      <!--ハンバーガー内のグロナビ-->
+      <!--nav in the hamburger menu-->
       <nav id="nav">
         <div class="nav-menu">
 
@@ -158,7 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
   
           </ul>
 
-          <!-- ハンバーガーお問い合わせボタン -->
+          <!-- hamburger contact btn -->
           <section class="contact-1">
             <a href="contact-en.php" target="_blank" rel="noopener noreferrer">
               <span>CONTACT</span>
@@ -166,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
           </section>
         </div>
 
-        <!--ハンバーガー内SNSセクション-->
+        <!--hamburger SNS section-->
         <div class="sns-btn">
           <a href="https://www.instagram.com/_.ami_____/" target="_blank" rel="noopener noreferrer" class="insta"><i class="fab fa-instagram"></i>
           </a>
@@ -201,36 +201,36 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
       <li class="form-right">
         
-          <!-- お名前 -->
+          <!-- Name -->
         <div class="txt-area">
-          <p>お名前</p>
+          <p>NAME</p>
           <input type="text"  name="name"  value="<?php echo $name; ?>">
         </div>
         
 
-        <!-- メールアドレス -->
+        <!-- Email -->
         <div class="txt-area">
-          <p>メールアドレス</p>
+          <p>EMAIL</p>
           <input type="text"  name="email"  value="<?php echo $email; ?>">
         </div>
         
 
-        <!-- 件名 -->
+        <!-- Subject -->
         <div class="txt-area">
-          <p>件名</p>
+          <p>Subject</p>
           <input type="text"  name="subject" value="<?php echo $subject; ?>">
         </div>
         
 
-        <!-- 本文 -->
+        <!-- Content -->
         <div class="txt-area">
-          <p>お問い合わせ内容</p>
+          <p>Details of your inquiry</p>
         <textarea  name="message" rows="4" ><?php echo $subject; ?></textarea>
         </div>
         
 
         <div class="sent-btn">
-          <button type="submit">送信</button>
+          <button type="submit">Submit</button>
         </div>
 
       </li>
@@ -242,11 +242,11 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
   <footer class="footer">
 
-    <!-- 共通フッター -->
+    <!-- common footer -->
     
     <section class="main-footer">
       
-        <img class="footer-logo" src="../img/Amy-logo.png" alt="Amyロゴ">
+        <img class="footer-logo" src="../img/Amy-logo.png" alt="Amy-logo">
   
         <ul>
           <li><a href="about-en.html" target="_blank" rel="noopener noreferrer" >

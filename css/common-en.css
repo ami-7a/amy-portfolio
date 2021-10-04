@@ -372,6 +372,12 @@ main{
 }    
 
 
+
+
+
+
+
+
 /* English add */
 
 /* Top Page */
@@ -401,13 +407,14 @@ main{
 }
 
 /* Top page */
-.names p{ 
+.about-txt .names p{ 
   font-size: 1rem;
 }
 
- h2{ /*Amy.K */
+.about-txt h2{ /*Amy.K */
   font-weight: normal;
   font-size: 2rem;
+  margin-bottom: -1.5vh;
 }
 
 /* work section */
@@ -419,7 +426,60 @@ main{
   font-size: 1rem;
 }
 
+/* Profile page */
+.sub-txt h2{ /* Ami Kubo */
+  font-size: 1.8rem;
+} 
 
+.sub-txt .names p{ /* Amy */
+  font-size: 1.5rem;
+  transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+  padding-left: 13vw;
+}
+
+dt {
+  font-size: .9rem;
+  margin-top: 1vh;
+  margin-right: .5vw;
+  background-color: #d8b485;
+  border-radius: 20px;
+  padding: 0% 1%;
+}
+
+dd {
+  font-size: .85rem;
+  margin-top: 1vh;
+}
+
+.skills{
+  font-size: .9rem;
+}
+
+
+/* Work page */
+.work-txt{
+  padding: 6vh 2vw 0vh 4vw;
+}
+
+h2{
+  font-size: 1.2rem;
+  margin-bottom: 12vh;
+}
+
+.work-txt p{
+  font-size: .85rem;
+}
+
+.bold-txt{
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.works-link-btn span{
+  font-size: .85rem;
+}
 
 
 
