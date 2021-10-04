@@ -482,7 +482,19 @@ h2{
 }
 
 
+.form-right{
+  font-size: .9rem;
+  margin-top: -2.5vh;
+}
 
+input{
+  margin: .5vh auto;
+}
+
+/* テキストエリア */
+textarea{
+  padding-top: .5vw;
+}
 
 
 
