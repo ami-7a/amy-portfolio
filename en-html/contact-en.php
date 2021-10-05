@@ -64,8 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         mb_send_mail($to, $subject, $message, $headers);
 
         // 完了メッセージ
-        $complete_msg = '送信されました！
-        <br>お問い合わせありがとうございます。<br>３日以内にメールにてご連絡いたします。<br>今しばらくお待ちください。';
+        $complete_msg = "It's done!<br>Thank you for contacting me. <br>We will contact you by email within 3 days. <br>Please wait a moment.";
 
         // 全てクリア
         $name = '';
