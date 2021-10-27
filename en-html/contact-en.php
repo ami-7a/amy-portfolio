@@ -157,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
       <nav id="nav">
         <div class="nav-menu">
 
-          <div class="nav-img"><img src="../img/Amy-logo.png" alt=""></div>
+          <div class="nav-img"><img src="../img/amy-logo.png" alt=""></div>
           
           <ul>
             <li><a href="index-en.html" target="_blank" rel="noopener noreferrer">
@@ -263,7 +263,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     
     <section class="main-footer">
       
-        <img class="footer-logo" src="../img/Amy-logo.png" alt="Amy-logo">
+        <img class="footer-logo" src="../img/amy-logo.png" alt="Amy-logo">
   
         <ul>
           <li><a href="about-en.html" target="_blank" rel="noopener noreferrer" >
