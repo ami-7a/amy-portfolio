@@ -533,8 +533,8 @@ textarea{
 @media screen and (max-width:599px){
   
   body{
-    font-size: .9rem;
-    letter-spacing: .25rem;
+    font-size: .8rem;
+    letter-spacing: .2rem;
   }
   
   .contents{
@@ -542,13 +542,13 @@ textarea{
   }
 
   .section-title{ /* h1共通 */
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 
   /* 他３ページのh1共通 */
   .section-title02{
-    font-size: 2.2rem;
-    margin: 7vh auto;
+    font-size: 1.5rem;
+    margin: 4vh auto;
   }
 
   /* Linkボタン共通 */
@@ -557,6 +557,7 @@ textarea{
     margin: 1vh auto;
     padding: 1.5vh 0vw 1.5vh 4vw;
     width: 40vw;
+    font-size: .8rem;
   }
   
   .link-btn a::before {
@@ -617,7 +618,7 @@ textarea{
 
   /*クリック・オープン時のナビゲーション*/
   #nav{ 
-    font-size: 1.2rem;
+    font-size: .9rem;
     height: 100vh;
   }
 
@@ -683,7 +684,7 @@ textarea{
   top: 30px;
   left: 3vw;
   line-height: 1.5vh;
-  font-size: .8rem;
+  font-size: .7rem;
 }
 
 
@@ -702,7 +703,7 @@ textarea{
   .main-footer ul{
     flex-direction: column;
     margin-left: 0vw;
-    font-size: .9rem;
+    font-size: .7rem;
   }
 
   .main-footer ul li{
@@ -715,9 +716,152 @@ textarea{
   }
 
   .copy-right p{
-    font-size: .9rem;
+    font-size: .6rem;
     letter-spacing: .15vw;
   }    
+
+
+
+
+  /* English add */
+
+  /* Top Page */
+  /* Language switching button */
+  .language-btn{
+    margin-right: 0vw;
+  }
+
+  .language-btn .en{
+    font-size: .8rem;
+    margin-right: 1vw;
+  }
+
+  .language-btn .jp{
+    font-size: .7rem;
+  }
+
+  /* mainvisual p */
+  .main-visual p{
+    font-size: .9rem;
+    letter-spacing: .1rem;
+  }
+
+  /*Scroll txt*/
+  .scrolldown span{
+    font-size: 0.8rem;
+  }
+
+  /* Top page */
+  .about-txt .names p{ 
+    font-size: 1rem;
+  }
+
+  .about-txt h2{ /*Amy.K */
+    font-size: 1.5rem;
+    margin-bottom: -1.5vh;
+  }
+
+  /* skill section */
+  h3{
+    font-size: 1rem;
+  }
+
+  .skills-txt p{
+    font-size: .75rem;
+  }
+
+  /* work section */
+  .my-works-txt{
+    font-size: .7rem;
+  }
+
+  .my-works-txt .my-works-name{
+    margin-bottom: 2vh;
+  }
+
+  /* Profile page */
+  .sub-txt h2{ /* Ami Kubo */
+    font-size: 1.2rem;
+  } 
+
+  .sub-txt .names p{ /* Amy */
+    font-size: 1.5rem;
+    transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    padding-left: 13vw;
+  }
+
+  dt {
+    font-size: .9rem;
+    margin-top: 1vh;
+    margin-right: .5vw;
+    background-color: #d8b485;
+    border-radius: 20px;
+    padding: 0% 1%;
+  }
+
+  dd {
+    font-size: .7rem;
+    margin-top: 1vh;
+    letter-spacing: .1rem;
+  }
+
+  .skills{
+    font-size: .8rem;
+  }
+
+
+  /* Works page */
+  .work-txt{
+    padding: 6vh 2vw 5vh 4vw;
+  }
+
+  .work-txt p{
+    font-size: .7rem;
+    line-height: 3vh;
+  }
+
+  .bold-txt{
+    font-weight: bold;
+    font-size: .8rem;
+  }
+
+  .works-link-btn span{
+    font-size: .8rem;
+  }
+
+  .form-right{
+    font-size: .8rem;
+    margin-top: -2.5vh;
+  }
+
+  input{
+    margin: .5vh auto;
+  }
+
+  /* テキストエリア */
+  textarea{
+    padding-top: .5vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

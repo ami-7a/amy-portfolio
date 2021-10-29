@@ -410,6 +410,11 @@ h3{ /* 共通h3 */
     width:60vw;
   }
 
+  /* 言語切り替えボタン */
+  .language-btn .en{
+    font-size: .9rem;
+  }
+
 
   /* メインビジュアル */
   .main-visual{
@@ -487,7 +492,7 @@ h3{ /* 共通h3 */
   }
   
    h2{ /*久保愛実 */
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
    .concept{ /*Love yourself, Love others */
@@ -497,7 +502,7 @@ h3{ /* 共通h3 */
   .main-txt{
     width: 85vw;
     margin: 3vh auto;
-    font-size: .9rem;
+    font-size: .7rem;
   }
   
   
@@ -519,55 +524,71 @@ h3{ /* 共通h3 */
   
   .skills-txt p{
     padding: 2%;
+    font-size: .7rem;
   }
-  
+
   /* ワークセクション */
   .work{
+    width: 95vw;
+  }
+
+  .my-works{
     flex-direction: column;
-    width: 100vw;
+    margin-bottom: 12vh;
   }
-  
-  .work li{
+
+  .my-works li{
+    width: 100%;
+  }
+
+  .my-works img{
     width: 80vw;
-    margin: 2vh auto;
+    height: auto;
+    margin-bottom: 5vh;
   }
-  
-  .mask img{
-    height:auto;
+
+  .my-works-txt{
+    line-height: 3vh;
+    font-size: .7rem;
+    padding-left: 0vw;
   }
-  
-  /* 背景が下から出現＋テキスト */
-  
-  .slide-up .mask::before{
-    opacity:1;/*透過なし*/
-    transform: translateY(0%); 
+
+  .my-works-txt .my-works-name{
+    font-size: 1.3rem;
   }
-  
-  .slide-up:hover .mask::before{/*hoverした時の変化*/
-    opacity:1;/*透過なし*/
-    transform: translateY(0);
+
+  .my-works-txt .my-works-name-ja{
+    margin-bottom: 2vh;
   }
-  
-  .slide-up .mask-txt{/*画像の上のテキスト*/
-    padding: 2%;
-    opacity:1;/*透過なし*/
-    width: 80vw;
+
+  /* ロゴ３つのサイズ */
+  .work-logo{
+    display: flex;
   }
-  
-  .slide-up:hover .mask-txt{/*hoverした時の変化*/
-    opacity:1;/*透過なしに変化*/
+
+  .work-logo img{
+    height: 10vh;
+    margin-left: 0vw;
   }
-  
-  .mask-txt .pop{
-    width: 6vw;
-    padding-left: 1vw;
+
+  /* 名刺のサイズ */
+  .business-card-img{
+    flex-direction: column;
+    margin-bottom: 5vh;
   }
+
+  .business-card-img img{
+    width: 65vw;
+    height: auto;
+    margin: 1vh auto;
+  }
+
   
   .contact p{
     line-height: 3vh;
-    font-size: .9rem;
+    font-size: .7rem;
     width: 93vw;
-    margin: auto;
+    margin: 2vh auto;
   }
   
   

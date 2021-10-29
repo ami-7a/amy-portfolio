@@ -414,8 +414,8 @@ main{
 @media screen and (max-width:599px){
   
   body{
-    font-size: .9rem;
-    letter-spacing: .25rem;
+    font-size: .6rem;
+    letter-spacing: .1rem;
   }
   
   .contents{
@@ -423,12 +423,12 @@ main{
   }
 
   .section-title{ /* h1共通 */
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   /* 他３ページのh1共通 */
   .section-title02{
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin: 7vh auto;
   }
 
@@ -438,6 +438,7 @@ main{
     margin: 1vh auto;
     padding: 1.5vh 0vw 1.5vh 4vw;
     width: 40vw;
+    font-size: .85rem;
   }
   
   .link-btn a::before {
@@ -541,31 +542,31 @@ main{
 
   /* 共通フッター */
   /* ページトップに戻るボタン */
-.page_top{
-  width: 60px;
-  height: 60px;
-  left: 40%;
-  margin-bottom: 1vh;
-}
+  .page_top{
+    width: 60px;
+    height: 60px;
+    left: 40%;
+    margin-bottom: 1vh;
+  }
 
-.page_top a{
-  width: 50px;
-  height: 50px;
-}
+  .page_top a{
+    width: 50px;
+    height: 50px;
+  }
 
-.page_top a::before{
-  font-size: .9rem;
-  top: -20px;
-  left: 3.5vw;
-}
+  .page_top a::before{
+    font-size: .9rem;
+    top: -20px;
+    left: 3.5vw;
+  }
 
-.page_top a::after{
-  content: 'PAGE TOP';
-  top: 30px;
-  left: 3vw;
-  line-height: 1.5vh;
-  font-size: .8rem;
-}
+  .page_top a::after{
+    content: 'PAGE TOP';
+    top: 30px;
+    left: 3vw;
+    line-height: 1.5vh;
+    font-size: .8rem;
+  }
 
 
   /* フッター */
