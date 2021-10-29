@@ -10,7 +10,6 @@ html{
 body{
   height: auto;
   background-color: #fffaec;
-  /* background-color: #f8f8f8; */
   color: #1a1c1e;
   font-size: 0.9rem;
   font-family: 'Lateef', 'Shippori Mincho B1', serif, sans-serif, cursive;
@@ -45,8 +44,9 @@ main{
 .section-title{ /* h1共通 */
   font-weight: normal;
   font-size: 3rem;
-  margin-bottom: 5vh;
+  margin-bottom: -2vh;
 }
+
 
 /* 他３ページのh1共通 */
 .section-title02{
