@@ -305,6 +305,10 @@ h3{ /* 共通h3 */
   margin-bottom: 12vh;
 }
 
+.work-02{
+  margin: 20vh auto;
+}
+
 .my-works li{
   width: 50%;
 }
@@ -529,7 +533,7 @@ h3{ /* 共通h3 */
 
   /* ワークセクション */
   .work{
-    width: 95vw;
+    max-width: 100vw;
   }
 
   .my-works{
@@ -568,7 +572,8 @@ h3{ /* 共通h3 */
 
   .work-logo img{
     height: 10vh;
-    margin-left: 0vw;
+    width: auto;
+    margin-left: 1vw;
   }
 
   /* 名刺のサイズ */
