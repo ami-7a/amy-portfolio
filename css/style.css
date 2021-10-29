@@ -294,56 +294,69 @@ h3{ /* 共通h3 */
 
 /* ワークセクション */
 .work{
-  width: 70%;
+  width: 75%;
   margin: 10vh auto;
 }
 
-.my-works, .work-logo{
+.my-works{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5vh;
+  align-items: center;
+  margin-bottom: 12vh;
 }
 
-.work1 li{
+.my-works li{
   width: 50%;
 }
 
 .my-works img{
-  height: 50vh;
+  height: 42vh;
   object-fit: contain;
+  box-shadow: 0 0 10px rgb(199, 199, 199);
 }
 
-.my-works .pink-background img{
-  height: 45vh;
-  object-fit: contain;
-  margin-right: 6vw;
+.my-works-txt{
+  line-height: 5vh;
+  font-size: .8rem;
+  padding-left: 4vw;
 }
 
-.my-works .green-background img{
-  height: 45vh;
-  object-fit: contain;
-  margin-left: 6vw;
+.my-works-txt .my-works-name{
+  font-family: 'WindSong', cursive;
+  color: #bd9869;
+  font-size: 1.8rem;
 }
 
+.my-works-txt .my-works-name-ja{
+  color: #bd9869;
+}
+
+/* ロゴ３つのサイズ */
 .work-logo img{
-  height: 17vh;
-  margin-top: 12vh;
-  margin-left: 1.5vw;
+  height: 15vh;
   object-fit: contain;
+  margin-left: 2vw;
+  box-shadow: none;
+}
+
+/* 名刺のサイズ */
+.business-card-img{
+  display: flex;
 }
 
 .business-card-img img{
-  height: 25vh;
+  height: 22vh;
   object-fit: contain;
-  margin-top: 1vh;
-  box-shadow: 0 0 7px rgb(204, 198, 198);
+  margin-right: 1.5vh;
 }
+
 
 
 /* コンタクトセクション */
 
 .contact p{
   line-height: 4vh;
+  margin-top: 2vh;
 }
 
 

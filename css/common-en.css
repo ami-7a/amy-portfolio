@@ -417,13 +417,18 @@ main{
   margin-bottom: -1.5vh;
 }
 
-/* work section */
-.slide-up .mask-txt{/*Text above the image*/
-  font-size: .8rem;
+/* skill section */
+.skills-txt p{
+  font-size: .9rem;
 }
 
-.mask-txt .span{
+/* work section */
+.my-works-txt{
   font-size: 1rem;
+}
+
+.my-works-txt .my-works-name{
+  margin-bottom: 2vh;
 }
 
 /* Profile page */
