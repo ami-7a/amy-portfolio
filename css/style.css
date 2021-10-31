@@ -306,7 +306,7 @@ h3{ /* 共通h3 */
 }
 
 .work-02{
-  margin: 20vh auto;
+  margin: 10vh auto;
 }
 
 .my-works li{
@@ -337,7 +337,7 @@ h3{ /* 共通h3 */
 
 /* ロゴ３つのサイズ */
 .work-logo img{
-  height: 15vh;
+  height: 20vh;
   object-fit: contain;
   margin-left: 2vw;
   box-shadow: none;
