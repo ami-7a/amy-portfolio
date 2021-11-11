@@ -85,6 +85,31 @@
       $("#top-fadeUp_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
     });
   </script>
+  
+  <!-- 各コンテンツをふっわっと表示させるJS -->
+  <script>
+    window.onload = function() {
+      scroll_effect();
+
+      $(window).scroll(function(){
+      scroll_effect();
+    });
+
+    function scroll_effect(){
+      $('.effect-fade').each(function(){
+        var elemPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight){
+        $(this).addClass('effect-scroll');
+        }
+      });
+      }
+    };
+  </script>
+
+
+
 
 </head>
 <body>
@@ -166,7 +191,7 @@
   <main class="main">
 
     <!-- 自己紹介セクション -->
-    <section class="about contents">
+    <section class="about contents effect-fade">
       
       <div class="about-me">
         <li class="about-photo">
@@ -187,7 +212,7 @@
       </div>
 
 
-      <div class="link-btn about-link-btn">
+      <div class="link-btn about-link-btn effect-fade">
         <a href="about.html" target="_blank" rel="noopener noreferrer"><span>MORE</span></a>
       </div>
 
@@ -195,13 +220,13 @@
 
 
     <!-- スキルセクション -->
-    <section class="skill contents">
+    <section class="skill contents effect-fade">
 
       <h1 class="section-title">Skills</h1>
       <p class="section-title-ja">できること</p>
 
       <div class="skills">
-        <li>
+        <li class="effect-fade">
           <img src="img/html-logo.png" alt=""><img src="img/CSS-logo.png" alt="">
           <div class="skills-txt">
             <h3>HTML5/CSS3</h3>
@@ -209,7 +234,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="effect-fade">
           <img src="img/JavaScript-logo.png" alt="">
           <div class="skills-txt">
             <h3>JavaScript</h3>
@@ -217,7 +242,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="effect-fade">
           <img src="img/PHP-logo.png" alt="">
           <div class="skills-txt">
             <h3>PHP</h3>
@@ -225,7 +250,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="effect-fade">
           <img src="img/Illustrator-logo.png" alt="">
           <div class="skills-txt">
             <h3>Illustrator</h3>
@@ -233,7 +258,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="effect-fade">
           <img src="img/Photoshop-logo.png" alt="">
           <div class="skills-txt">
             <h3>Photoshop</h3>
@@ -241,7 +266,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="effect-fade">
           <img src="img/Camera-logo.png" alt="">
           <div class="skills-txt">
             <h3>Camera</h3>
@@ -253,7 +278,7 @@
 
 
     <!-- ワークセクション -->
-    <section class="works contents">
+    <section class="works contents effect-fade">
       <h1 class="section-title">Works</h1>
       <p class="section-title-ja">制作物</p>
 
@@ -277,7 +302,7 @@
         </div>
 
         <!-- オークニエステートホームページ -->
-        <div class="my-works">
+        <div class="my-works effect-fade">
           <li>
             <a href="https://oakni-estate.website/" target="_blank" rel="noopener noreferrer">
               <img src="img/oakni-website.png" alt="不動産サイト写真">
@@ -293,7 +318,7 @@
         </div>
 
         <!-- ロゴ制作 -->
-        <div class="my-works work-02">
+        <div class="my-works work-02 effect-fade">
           <li class="work-logo">
             <img src="img/amy-logo-gold.png" alt="Amyロゴ">
             <img src="img/oakni-logo.png" alt="oakniロゴ">
@@ -309,7 +334,7 @@
         </div>
 
         <!-- 名刺制作 -->
-        <div class="my-works work-02">
+        <div class="my-works work-02 effect-fade">
           
           <li class="business-card-img">
             <img src="img/Amy business card 01.png" alt="">
@@ -329,30 +354,30 @@
       </div>
 
       
-      <div class="link-btn">
+      <div class="link-btn effect-fade">
         <a href="works.html" target="_blank" rel="noopener noreferrer"><span>MORE</span></a>
       </div>
     </section>
 
     <!-- コンタクトセクション -->
-    <section class="contact contents">
+    <section class="contact contents effect-fade">
       <h1 class="section-title">Contact</h1>
       <p class="section-title-ja">お問い合わせ</p>
 
       <p>ポートフォリオWebサイトをご覧いただきありがとうございます。<br>ご連絡は下記リンク先のフォームをご利用ください。
       </p>
 
-      <div class="link-btn contact-link-btn">
+      <div class="link-btn contact-link-btn effect-fade">
         <a href="contact.php" target="_blank" rel="noopener noreferrer"><span>Contact form<i class="fas fa-paper-plane fa-xs"></i></span></a>
       </div>
       
-      <div class="page_top"><a href="#"></a></div>
+      <div class="page_top effect-fade"><a href="#"></a></div>
       
     </section>
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer effect-fade">
 
     <!-- 共通フッター -->
     
@@ -376,7 +401,7 @@
 
     </section>
 
-    <section class="copy-right">
+    <section class="copy-right effect-fade">
       <p>©︎ 2021, Ami Kubo, All Rights Reserved.</p>
     </section>
 
