@@ -194,9 +194,9 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
    
   </header>
 
-  <main class="main">
+  <main class="main effect-fade">
     
-    <h1 class="section-title02">Contact form</h1>
+    <h1 class="section-title02 effect-fade">Contact form</h1>
 
     <?php if ($err_msg != ''): ?>
         <div class="alert alert-danger">
@@ -261,7 +261,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
     <!-- common footer -->
     
-    <section class="main-footer">
+    <section class="main-footer effect-fade">
       
         <img class="footer-logo" src="../img/amy-logo.png" alt="Amy-logo">
   

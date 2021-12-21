@@ -125,7 +125,7 @@ main{
   position: fixed;
   right : 4vw;
   top: 2vh;
-   z-index: 100;/*ハンバーガーを一番上に表示 */
+  z-index: 100;/*ハンバーガーを一番上に表示 */
 }
 
 .open_line {
